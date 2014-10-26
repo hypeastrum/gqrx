@@ -74,7 +74,12 @@ To compile gqrx from source you need the following dependencies:
     - HackRF Jawbreaker driver from http://greatscottgadgets.com/hackrf/
 - gnuradio-osmosdr from http://cgit.osmocom.org/cgit/gr-osmosdr/
 - pulseaudio (Linux only and optional)
-- Qt 4.7 or later and optionally Qt Creator (gqrx works with Qt 5)
+- Qt 4.7 or later with the following components:
+    - Core
+    - GUI
+    - Network
+    - Widgets (Qt 5 only)
+    - Svg (runtime only)
 
 Gqrx comes with a simple qmake build setup. It can be compiled from within Qt Creator or in a terminal:
 
@@ -98,7 +103,7 @@ Some of the source files were adopted from Cutesdr by Moe Weatley and these come
 Following people and organisations have contributed:
 
 
-TODO: Creditcs for bookmarks
+TODO: Credits for bookmarks
 
 
 Alex Grinkov:
@@ -106,6 +111,9 @@ Alex Grinkov:
 
 Anthony Willard:
 - Various fixes and improvements
+
+Chris Kuethe:
+- Fractional PPM correction.
 
 Christian Lindner DL2VCL:
 Stefano Leucci:
